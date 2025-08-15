@@ -10,5 +10,5 @@ jobs:
         with:
           node-version: '20'
       - run: ls
-      - run: ls huawei/pg
+      - run: ls huawei/jpg
      
