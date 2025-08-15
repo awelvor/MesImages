@@ -9,11 +9,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - run: npm install -g bats
-      - run: bats -v
-      - run: unzip images/come.zip
       - run: ls
-      - run: pwd
-      - run: ls /home/runner/work/actions/actions
-      - run: sudo apt-get install -y imagemagick
-      - run: mogrify -version
+      - run: ls huawei/pg
+     
