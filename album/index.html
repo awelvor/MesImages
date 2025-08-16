@@ -12,11 +12,14 @@
     <h1>Mes Images</h1>
     <p>Le 16/08/2025</p>
     
-<div class="d-flex flex-row-reverse flex-wrap justify-content-start">
+<div class="d-flex flex-row flex-wrap justify-content-start">
 <script>
 html = '';
 myTab.forEach(function(el){
-html += '<div class="p-2"><img src="https://awelvor.github.io/MesImages/huawei/jpg/'+ el.url +'" style="height: 200px;"></div>';
+html += '<div class="card">';
+html += '<div class="boody"><img src="https://awelvor.github.io/MesImages/huawei/jpg/'+ el.url +'" style="height: 200px;"></div>';
+html += '<div class"footer">'+el.url+'</div>';
+html += '</div>';
 } ) ;
 document.write(html);
 </script>
