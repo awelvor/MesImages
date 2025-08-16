@@ -18,7 +18,7 @@ html = '';
 myTab.forEach(function(el){
 html += '<div class="card">';
 html += '<div class="boody"><img src="https://awelvor.github.io/MesImages/huawei/jpg/'+ el.url +'" style="height: 200px;"></div>';
-html += '<div class"footer">'+el.url+'</div>';
+html += '<div class"footer">'+el.url.match(/\d{8}/)+'</div>';
 html += '</div>';
 } ) ;
 document.write(html);
