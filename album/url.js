@@ -1,7 +1,7 @@
 // url.js
 // le 15/08/2025
 
-const myTab = [
+const jpghuawei = [
 {url: "IMG_20231023_185306.jpg"},
 {url: "IMG_20231031_104530.jpg"},
 {url: "IMG_20231031_104533.jpg"},
@@ -75,4 +75,19 @@ const myTab = [
 {url: "IMG_20250804_152239.jpg"},
 
 ];
+const jpg2025 = [
+{url: "20250814_140934.jpg"},
+{url: "20250814_140938.jpg"},
+{url: "20250814_141150.jpg"},
+{url: "20250814_141157.jpg"},
+{url: "20250814_141209.jpg"},
+{url: "20250814_152731.jpg"},
+{url: "20250814_181936.jpg"},
+{url: "IMG-20250814-WA0002.jpg"},
+{url: "IMG-20250814-WA0003.jpg"},
+{url: "IMG-20250814-WA0004.jpg"},
+{url: "IMG-20250814-WA0005.jpg"},
+];
+
+
 // end of file
