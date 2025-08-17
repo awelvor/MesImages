@@ -15,7 +15,13 @@
 <div class="d-flex flex-row flex-wrap justify-content-start">
 <script>
 html = '';
-myTab.forEach(function(el){
+jpg2025.forEach(function(el){
+html += '<div class="card">';
+html += '<div class="boody"><img src="https://awelvor.github.io/MesImages/jpg/2025/'+ el.url +'" style="height: 200px;"></div>';
+html += '<div class"footer text-center">'+el.url.match(/\d{8}/)+'</div>';
+html += '</div>';
+} ) ;
+jpghuawei.forEach(function(el){
 html += '<div class="card">';
 html += '<div class="boody"><img src="https://awelvor.github.io/MesImages/huawei/jpg/'+ el.url +'" style="height: 200px;"></div>';
 html += '<div class"footer text-center">'+el.url.match(/\d{8}/)+'</div>';
