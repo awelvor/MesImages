@@ -11,4 +11,6 @@ jobs:
           node-version: '20'
       - run: ls
       - run: ls huawei/jpg
+      - run: ls jpg/2021
+      - run: ls jpg/2025
      
