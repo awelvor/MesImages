@@ -87,6 +87,7 @@ const jpg2025 = [
 {url: "IMG-20250814-WA0003.jpg"},
 {url: "IMG-20250814-WA0004.jpg"},
 {url: "IMG-20250814-WA0005.jpg"},
+{url: "PXL_20250424_155313996.PORTRAIT~2.jpg"},
 ];
 
 
