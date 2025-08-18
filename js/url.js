@@ -91,7 +91,7 @@ const jpg2025 = [
 {url: "marielle_20250115.jpg"},
 {url: "marielle_20250116.jpg"},
 {url: "IMG-20250818-WA0000.jpg"},
-{url  "IMG-20250818-WA0001.jpg"},
+{url: "IMG-20250818-WA0001.jpg"},
 {url: "IMG-20250818-WA0002.jpg"},
 {url: "IMG-20250818-WA0003.jpg"},
 {url: "IMG-20250818-WA0004.jpg"},
