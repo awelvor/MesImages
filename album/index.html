@@ -12,21 +12,46 @@
     <h1>Mes Images</h1>
     <p>Le 16/08/2025</p>
     
-<div class="d-flex flex-row flex-wrap justify-content-center">
+   
+    
+    
+   
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#im1.jpg"><img src="im1.jpg" style="height: 200px;"></button>
+<div class="modal fade" id="im1.jpg" >
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header"><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body"><img src="im1.jpg" style="height: 800px;"></div>
+    </div>
+  </div>
+</div>
+    
+<div class="d-flex flex-row flex-wrap justify-content-start">
 <script>
 html = '';
 jpg2025.forEach(function(el){
-html += '<div class="card">';
-html += '<div class="boody"><img src="https://awelvor.github.io/MesImages/jpg/2025/'+ el.url +'" style="height: 200px;"></div>';
-html += '<div class"footer text-center">'+el.url.match(/\d{8}/)+'</div>';
+html += '<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#' + el.url +'"><img src="https://awelvor.github.io/MesImages/jpg/2025/'+ el.url +'" style="height: 200px;"></button>';
+html += '<div class="modal fade" id="'+el.url+'" >';
+html += '<div class="modal-dialog modal-lg">';
+html += '<div class="modal-content">';
+html += '<div class="modal-header">'+el.url.match(/\d{8}/)+'<button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>';
+html += '<div class="modal-body"><img src="https://awelvor.github.io/MesImages/jpg/2025/'+el.url+'" style="width: 760px;"></div>';
+html += '</div>';
+html += '</div>';
 html += '</div>';
 } ) ;
 jpghuawei.forEach(function(el){
-html += '<div class="card">';
-html += '<div class="boody"><img src="https://awelvor.github.io/MesImages/huawei/jpg/'+ el.url +'" style="height: 200px;"></div>';
-html += '<div class"footer text-center">'+el.url.match(/\d{8}/)+'</div>';
+html += '<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#' + el.url +'"><img src="https://awelvor.github.io/MesImages/huawei/jpg/'+ el.url +'" style="height: 200px;"></button>';
+html += '<div class="modal fade" id="'+el.url+'" >';
+html += '<div class="modal-dialog modal-lg">';
+html += '<div class="modal-content">';
+html += '<div class="modal-header">'+el.url.match(/\d{8}/)+'<button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>';
+html += '<div class="modal-body"><img src="https://awelvor.github.io/MesImages/huawei/jpg/'+el.url+'" style="width: 760px;"></div>';
 html += '</div>';
-} ) ;
+html += '</div>';
+html += '</div>';
+} );
+
 document.write(html);
 </script>
 </div>
