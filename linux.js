@@ -1,4 +1,4 @@
-const http = require('http');
+
 const os = require('os');
 
 let html = "";
@@ -27,17 +27,3 @@ html += '<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/boots
 html += "</body>";
 
 html += "</html>";
-
-const server = http.createServer((req, res) => {
-  // Set the response HTTP header with HTTP status and Content type
-  res.writeHead(200, { 'Content-Type': 'text/html' });
-  res.end(html);
-});
-
-// Define the port to listen on const PORT = 3000;
-const PORT = 3000;
-
-// Start the server and listen on the specified port
-server.listen(PORT, 'localhost', () => {
-  console.log(`Server running at http://localhost:${PORT}/`);
-});
