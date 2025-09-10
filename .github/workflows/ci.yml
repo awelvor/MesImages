@@ -23,6 +23,8 @@ jobs:
         id: checkout
         uses: actions/checkout@v5
 
+       
+
       - name: Setup Node.js
         id: setup-node
         uses: actions/setup-node@v5
@@ -30,6 +32,9 @@ jobs:
           node-version-file: .node-version
           cache: npm
 
+      - name: Use Node.js ${{ env.NODE_VERSION }}
+        run: ./linux.js
+        
       - name: Install Dependencies
         id: npm-ci
         run: npm ci
